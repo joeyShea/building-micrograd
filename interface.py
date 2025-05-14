@@ -4,7 +4,7 @@ from value import Value
 # create model
 n = MLP(3, [4, 4, 1]) # 3 inputs, 4 neurons in first layer, 4 neurons in second layer, 1 output
 
-# create input date
+# create input data
 xs = [
     [2.0, 3.0, -1.0],
     [3.0, -1.0, 0.5],

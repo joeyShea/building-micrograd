@@ -4,11 +4,12 @@ import random
 class Neuron:
 
     def __init__(self, nin):
+        # initialise random weights and bias
         self.w = [Value(random.uniform(-1, 1)) for _ in range(nin)]
         self.b = Value(random.uniform(-1,1))
 
     def __call__(self, x):
-        # x # x + b
+        # determine if the neuron should be activated given the input
         activation = sum((wi * xi for wi, xi in zip(self.w, x)), self.b) # self.b is the starting point
         out = activation.tanh()
         return out

@@ -15,6 +15,6 @@ No external libraries are required.
 
 ## How to Run
 
->>> python interface.py
+> python interface.py
 
 You will be prompted to enter number of epochs and a learning rate
